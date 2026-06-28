@@ -49,7 +49,6 @@ A premium electronics e-commerce website built with HTML & CSS. Dark-themed & vi
     ├── confirmation.html
     ├── about.html
     ├── contact.html
-    ├── 404.html
     ├── categories/
     │   ├── smartphones.html
     │   ├── laptops.html
@@ -86,7 +85,6 @@ A premium electronics e-commerce website built with HTML & CSS. Dark-themed & vi
 | Login | Centered auth card |
 | Register | Centered auth card |
 | Profile | Sidebar + orders table |
-| 404 | Large error code with glow effect |
 
 
 ## How to Run
