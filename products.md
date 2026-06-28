@@ -96,7 +96,7 @@
 | 9  | Fitbit | Versa 4 | Rs. 16,499 | Rs. 20,499 |
 
 
-## Accessories - ACC 6
+## Accessories - AC 6
 
 | ID | Brand | Name | Price | MRP |
 |----|-------|------|-------|-----|
