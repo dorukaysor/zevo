@@ -1,0 +1,95 @@
+/* ================================================
+   ZEVO — Auth Page Styles
+   Login + Register centered card
+   ================================================ */
+
+/* --- Auth Page Wrapper --- */
+.auth-page {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 32px;
+}
+
+/* --- Auth Card --- */
+.auth-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 48px;
+    width: 100%;
+    max-width: 440px;
+}
+
+.auth-card .auth-logo {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.auth-card .auth-logo span {
+    color: var(--accent);
+}
+
+.auth-card h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.auth-card .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.auth-card .btn {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* --- Remember Me / Terms --- */
+.remember-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.remember-row input {
+    accent-color: var(--accent);
+    width: 16px;
+    height: 16px;
+}
+
+/* --- Forgot Password --- */
+.forgot-link {
+    display: block;
+    text-align: right;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: -12px;
+    margin-bottom: 20px;
+}
+
+.forgot-link:hover {
+    color: var(--accent);
+}
+
+/* --- Auth Footer Text --- */
+.auth-footer {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.auth-footer a {
+    color: var(--accent);
+    font-weight: 500;
+}

@@ -1,0 +1,197 @@
+/* ================================================
+   ZEVO — Profile Page Styles
+   Sidebar + orders table
+   ================================================ */
+
+/* --- Profile Header --- */
+.profile-header {
+    padding: 48px 0 0;
+}
+
+.profile-header h1 {
+    font-size: 36px;
+}
+
+/* --- Profile Layout --- */
+.profile-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+    padding: 32px 0 96px;
+}
+
+/* --- Profile Sidebar --- */
+.profile-sidebar {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    text-align: center;
+    height: fit-content;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    color: #000;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.profile-sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.profile-sidebar .email {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.profile-nav {
+    list-style: none;
+    text-align: left;
+}
+
+.profile-nav li {
+    margin-bottom: 4px;
+}
+
+.profile-nav a {
+    display: block;
+    padding: 10px 16px;
+    border-radius: var(--radius);
+    font-size: 14px;
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+.profile-nav a:hover,
+.profile-nav a.active {
+    background-color: var(--elevated);
+    color: var(--accent);
+}
+
+/* --- Orders Section --- */
+.profile-content h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.orders-table th {
+    text-align: left;
+    padding: 16px 20px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    background-color: var(--elevated);
+    border-bottom: 1px solid var(--border);
+}
+
+.orders-table td {
+    padding: 16px 20px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--border);
+}
+
+.orders-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* --- Status Badges --- */
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-delivered {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: var(--success);
+}
+
+.status-shipped {
+    background-color: rgba(250, 204, 21, 0.15);
+    color: var(--accent);
+}
+
+.status-processing {
+    background-color: rgba(59, 130, 246, 0.15);
+    color: #3B82F6;
+}
+
+/* --- 404 Page --- */
+.page-404 {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 96px 32px;
+}
+
+.page-404 .error-code {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 1;
+    color: var(--text);
+    text-shadow: 0 0 80px rgba(250, 204, 21, 0.3), 0 0 160px rgba(250, 204, 21, 0.1);
+    margin-bottom: 16px;
+}
+
+.page-404 h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.page-404 p {
+    color: var(--muted);
+    margin-bottom: 32px;
+    font-size: 16px;
+}
+
+.page-404 .buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+/* --- Wishlist Page --- */
+.wishlist-header {
+    padding: 48px 0 0;
+}
+
+.wishlist-header h1 {
+    font-size: 36px;
+}
+
+.wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 32px 0 96px;
+}

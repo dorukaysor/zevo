@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEVO | Shop</title>
+    <meta property="og:title" content="ZEVO | Power Everything.">
+    <meta property="og:description" content="Premium electronics, curated for what's next.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="../media/favicon.svg" type="image/svg+xml">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/shop.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        Free shipping on orders over Rs. 999 &nbsp;|&nbsp; Use code <strong>ZEVO10</strong> for 10% off your first order
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">ZEV<span>O</span></a>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="../index.html">Home</a></li>
+                <li class="nav-item"><a href="shop.html">Shop</a></li>
+                <li class="nav-item">
+                    <a href="#">Categories</a>
+                    <div class="dropdown">
+                        <a href="categories/smartphones.html">Smartphones</a>
+                        <a href="categories/laptops.html">Laptops</a>
+                        <a href="categories/audio.html">Audio</a>
+                        <a href="categories/smartwatches.html">Smartwatches</a>
+                        <a href="categories/cameras.html">Cameras</a>
+                        <a href="categories/accessories.html">Accessories</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="wishlist.html" class="nav-icon"><i class="fa-regular fa-heart"></i></a>
+                <a href="cart.html" class="nav-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge">3</span>
+                </a>
+                <div class="nav-icon dropdown-trigger">
+                    <i class="fa-regular fa-user"></i>
+                    <div class="dropdown">
+                        <a href="categories/smartphones.html">Smartphones</a>
+                        <a href="categories/laptops.html">Laptops</a>
+                        <a href="categories/audio.html">Audio</a>
+                        <a href="categories/smartwatches.html">Smartwatches</a>
+                        <a href="categories/cameras.html">Cameras</a>
+                        <a href="categories/accessories.html">Accessories</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Shop Header -->
+        <div class="container shop-header">
+            <h1>Shop</h1>
+        </div>
+
+        <!-- Shop Layout: Sidebar + Grid -->
+        <div class="container shop-layout">
+
+            <!-- Sidebar Filters -->
+            <aside class="shop-sidebar">
+
+                <h3 style="font-size: 20px; margin-bottom: 32px;">Filters</h3>
+
+                <!-- Category Filter -->
+                <div class="filter-section">
+                    <h4>Categories</h4>
+                    <label class="form-checkbox">
+                        <input type="checkbox"> Smartphones
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox"> Laptops
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox"> Audio
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox"> Smartwatches
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox"> Cameras
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox"> Accessories
+                    </label>
+                </div>
+
+                <!-- Price Range Filter -->
+                <div class="filter-section">
+                    <h4>Price Range</h4>
+                    <div class="price-inputs">
+                        <input type="number" placeholder="Min">
+                        <input type="number" placeholder="Max">
+                    </div>
+                </div>
+
+                <!-- Rating Filter -->
+                <div class="filter-section">
+                    <h4>Rating</h4>
+                    <label class="form-checkbox">
+                        <input type="radio" name="rating"> 4★ & Up
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="radio" name="rating"> 3★ & Up
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="radio" name="rating" checked> All Ratings
+                    </label>
+                </div>
+
+                <!-- Tags Filter -->
+                <div class="filter-section">
+                    <h4>Tags</h4>
+                    <label class="form-checkbox">
+                        <input type="checkbox"> New
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox"> Sale
+                    </label>
+                </div>
+
+                <!-- Filter Actions -->
+                <div class="filter-actions">
+                    <button class="btn btn-primary" style="padding: 10px 24px; font-size: 13px;">Apply Filters</button>
+                    <a href="#" class="btn btn-ghost" style="padding: 10px 16px; font-size: 13px;">Clear</a>
+                </div>
+
+            </aside>
+
+            <!-- Product Grid Area -->
+            <div class="shop-main">
+
+                <!-- Top bar with count and sort -->
+                <div class="shop-topbar">
+                    <p>16 Products</p>
+                    <select>
+                        <option>Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest</option>
+                    </select>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="shop-grid">
+
+                    <!-- Product 1: Nexus Ultra Pro -->
+                    <a href="products/nexus-ultra-pro.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <span class="badge badge-new">New</span>
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=Nexus+Ultra+Pro" alt="Nexus Ultra Pro">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Smartphones</span>
+                            <h3>Nexus Ultra Pro</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 89,999</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 2: Orbit X1 -->
+                    <a href="products/orbit-x1.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=Orbit+X1" alt="Orbit X1">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Smartphones</span>
+                            <h3>Orbit X1</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 74,999</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 3: Flux S23 -->
+                    <a href="products/flux-s23.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=Flux+S23" alt="Flux S23">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Smartphones</span>
+                            <h3>Flux S23</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 52,999</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 4: Echo Lite -->
+                    <a href="products/echo-lite.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=Echo+Lite" alt="Echo Lite">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Smartphones</span>
+                            <h3>Echo Lite</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 28,499</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 5: Apex Book Pro -->
+                    <a href="products/apex-book-pro.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=Apex+Book+Pro" alt="Apex Book Pro">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Laptops</span>
+                            <h3>Apex Book Pro</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 1,49,999</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 6: Slim Air 15 -->
+                    <a href="products/slim-air-15.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=Slim+Air+15" alt="Slim Air 15">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Laptops</span>
+                            <h3>Slim Air 15</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 99,999</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 7: Nova Gamer G7 -->
+                    <a href="products/nova-gamer-g7.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=Nova+Gamer+G7" alt="Nova Gamer G7">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Laptops</span>
+                            <h3>Nova Gamer G7</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 1,24,999</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 8: Pulse Buds Pro -->
+                    <a href="products/pulse-buds-pro.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <span class="badge badge-sale">Sale</span>
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=Pulse+Buds+Pro" alt="Pulse Buds Pro">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Audio</span>
+                            <h3>Pulse Buds Pro</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 10,999</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 9: Arc Headphones H1 -->
+                    <a href="products/arc-headphones-h1.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=Arc+Headphones+H1" alt="Arc Headphones H1">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Audio</span>
+                            <h3>Arc Headphones H1</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 28,999</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 10: Bass Speaker Mini -->
+                    <a href="products/bass-speaker-mini.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=Bass+Speaker+Mini" alt="Bass Speaker Mini">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Audio</span>
+                            <h3>Bass Speaker Mini</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 6,499</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 11: Clarity IEM Pro -->
+                    <a href="products/clarity-iem-pro.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=Clarity+IEM+Pro" alt="Clarity IEM Pro">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Audio</span>
+                            <h3>Clarity IEM Pro</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 16,499</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 12: ZWatch Ultra -->
+                    <a href="products/zwatch-ultra.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=ZWatch+Ultra" alt="ZWatch Ultra">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Smartwatches</span>
+                            <h3>ZWatch Ultra</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 37,499</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 13: FitBand X5 -->
+                    <a href="products/fitband-x5.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=FitBand+X5" alt="FitBand X5">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Smartwatches</span>
+                            <h3>FitBand X5</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 8,999</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 14: Vision Glasses V1 -->
+                    <a href="products/vision-glasses-v1.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=Vision+Glasses+V1" alt="Vision Glasses V1">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Smartwatches</span>
+                            <h3>Vision Glasses V1</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 19,999</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 15: TurboCharge 100W -->
+                    <a href="products/turbocharge-100w.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=TurboCharge+100W" alt="TurboCharge 100W">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Accessories</span>
+                            <h3>TurboCharge 100W</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 3,999</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 16: MeshPad Pro -->
+                    <a href="products/meshpad-pro.html" class="product-card" style="text-decoration: none; color: inherit;">
+                        <div class="product-card-image">
+                            <img src="https://placehold.co/600x800/1A1A1A/888888?text=MeshPad+Pro" alt="MeshPad Pro">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="label">Accessories</span>
+                            <h3>MeshPad Pro</h3>
+                            <div class="card-footer">
+                                <span class="price">Rs. 4,999</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <!-- end shop-grid -->
+
+            </div>
+            <!-- end shop-main -->
+
+        </div>
+        <!-- end shop-layout -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">ZEV<span>O</span></div>
+                <div class="tagline">Power Everything.</div>
+                <p>Premium electronics curated for the modern world. Quality meets innovation in every product we offer.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="shop.html">All Products</a></li>
+                    <li><a href="categories/smartphones.html">Smartphones</a></li>
+                    <li><a href="categories/laptops.html">Laptops</a></li>
+                    <li><a href="categories/audio.html">Audio</a></li>
+                    <li><a href="categories/smartwatches.html">Smartwatches</a></li>
+                    <li><a href="categories/cameras.html">Cameras</a></li>
+                    <li><a href="categories/accessories.html">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ZEVO. All rights reserved.</p>
+            <div class="payment-badges">
+                <span class="payment-badge">Visa</span>
+                <span class="payment-badge">MC</span>
+                <span class="payment-badge">Amex</span>
+                <span class="payment-badge">UPI</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+{
+  "laptops": {
+    "count": "9",
+    "apple": [
+      {
+        "id": 1,
+        "product_id": "lp-apple-1",
+        "name": "MacBook Air M2",
+        "price": 1199,
+        "description": "The MacBook Air M2 with a sleek design, powerful performance, and long battery life. Perfect for students and professionals on the go. ",
+        "specs": [
+          {
+            "display": "13.6-inch Retina display",
+            "processor": "Apple M2 chip",
+            "ram": "8GB, 16GB",
+            "storage": "256GB, 512GB, 1TB, 2TB",
+            "battery": "Up to 18 hours of battery life",
+            "camera": "720p FaceTime HD camera",
+            "os": "macOS Monterey"
+          }
+        ],
+        "images": [
+          "/media/products/lp/apple-11.jpg",
+          "/media/products/lp/apple-12.jpg",
+          "/media/products/lp/apple-13.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "product_id": "lp-apple-2",
+        "name": "MacBook Pro M1",
+        "price": 1299,
+        "description": "The MacBook Pro M1 with a stunning Retina display, powerful performance, and all-day battery life. Ideal for creative professionals.",
+        "specs": [
+          {
+            "display": "14-inch Retina display",
+            "processor": "Apple M1 chip",
+            "ram": "8GB, 16GB",
+            "storage": "256GB, 512GB, 1TB, 2TB",
+            "battery": "Up to 20 hours of battery life",
+            "camera": "720p FaceTime HD camera",
+            "os": "macOS Monterey"
+          }
+        ],
+        "images": [
+          "/media/products/lp/apple-21.jpg",
+          "/media/products/lp/apple-22.jpg",
+          "/media/products/lp/apple-23.jpg"
+        ]
+      },
+      {
+        "id": 3,
+        "product_id": "lp-apple-3",
+        "name": "MacBook Pro M2",
+        "price": 1999,
+        "description": "The MacBook Pro M2 with a stunning Retina display, powerful performance, and all-day battery life. Ideal for creative professionals.",
+        "specs": [
+          {
+            "display": "16-inch Retina display",
+            "processor": "Apple M2 chip",
+            "ram": "16GB, 32GB",
+            "storage": "512GB, 1TB, 2TB, 4TB",
+            "battery": "Up to 21 hours of battery life",
+            "camera": "1080p FaceTime HD camera",
+            "os": "macOS Monterey"
+          }
+        ],
+        "images": [
+          "/media/products/lp/apple-31.jpg",
+          "/media/products/lp/apple-32.jpg",
+          "/media/products/lp/apple-33.jpg"
+        ]
+      }
+    ],
+    "samsung": [
+      {
+        "id": 1,
+        "product_id": "lp-samsung-1",
+        "name": "Samsung Galaxy Book Pro",
+        "price": 999,
+        "description": "The Samsung Galaxy Book Pro with a sleek design, AMOLED display, and powerful performance. Perfect for productivity and entertainment.",
+        "specs": [
+          {
+            "display": "15.6-inch AMOLED display",
+            "processor": "Intel Core i7",
+            "ram": "8GB, 16GB",
+            "storage": "256GB, 512GB, 1TB",
+            "battery": "Up to 20 hours of battery life",
+            "camera": "720p HD camera",
+            "os": "Windows 10"
+          }
+        ],
+        "images": [
+          "/media/products/lp/samsung-11.jpg",
+          "/media/products/lp/samsung-12.jpg",
+          "/media/products/lp/samsung-13.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "product_id": "lp-samsung-2",
+        "name": "Samsung Galaxy Book Flex",
+        "price": 1399,
+        "description": "The Samsung Galaxy Book Flex with a QLED display, powerful performance, and long battery life. Ideal for creative professionals and multitaskers.",
+        "specs": [
+          {
+            "display": "13.3-inch QLED display",
+            "processor": "Intel Core i7",
+            "ram": "8GB, 16GB",
+            "storage": "256GB, 512GB, 1TB",
+            "battery": "Up to 22 hours of battery life",
+            "camera": "720p HD camera",
+            "os": "Windows 10"
+          }
+        ],
+        "images": [
+          "/media/products/lp/samsung-21.jpg",
+          "/media/products/lp/samsung-22.jpg",
+          "/media/products/lp/samsung-23.jpg"
+        ]
+      }
+    ],
+    "dell": [
+      {
+        "id": 1,
+        "product_id": "lp-dell-1",
+        "name": "Dell XPS 13",
+        "price": 999,
+        "description": "The Dell XPS 13 with a stunning InfinityEdge display, powerful performance, and long battery life. Perfect for professionals and students.",
+        "specs": [
+          {
+            "display": "13.4-inch InfinityEdge display",
+            "processor": "Intel Core i7",
+            "ram": "8GB, 16GB",
+            "storage": "256GB, 512GB, 1TB",
+            "battery": "Up to 12 hours of battery life",
+            "camera": "720p HD camera",
+            "os": "Windows 10"
+          }
+        ],
+        "images": [
+          "/media/products/lp/dell-11.jpg",
+          "/media/products/lp/dell-12.jpg",
+          "/media/products/lp/dell-13.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "product_id": "lp-dell-2",
+        "name": "Dell XPS 15",
+        "price": 1299,
+        "description": "The Dell XPS 15 with a stunning InfinityEdge display, powerful performance, and long battery life. Ideal for creative professionals and multi-taskers.",
+        "specs": [
+          {
+            "display": "15.6-inch InfinityEdge display",
+            "processor": "Intel Core i7",
+            "ram": "16GB, 32GB",
+            "storage": "512GB, 1TB, 2TB",
+            "battery": "Up to 10 hours of battery life",
+            "camera": "720p HD camera",
+            "os": "Windows 10"
+          }
+        ],
+        "images": [
+          "/media/products/lp/dell-21.jpg",
+          "/media/products/lp/dell-22.jpg",
+          "/media/products/lp/dell-23.jpg"
+        ]
+      }
+    ],
+    "lenovo": [
+      {
+        "id": 1,
+        "product_id": "lp-lenovo-1",
+        "name": "Lenovo ThinkPad X1 Carbon",
+        "price": 1299,
+        "description": "The Lenovo ThinkPad X1 Carbon with a sleek design, powerful performance, and long battery life. Perfect for business professionals and frequent travelers.",
+        "specs": [
+          {
+            "display": "14-inch Full HD display",
+            "processor": "Intel Core i7",
+            "ram": "8GB, 16GB",
+            "storage": "256GB, 512GB, 1TB",
+            "battery": "Up to 15 hours of battery life",
+            "camera": "720p HD camera",
+            "os": "Windows 10"
+          }
+        ],
+        "images": [
+          "/media/products/lp/lenovo-11.jpg",
+          "/media/products/lp/lenovo-12.jpg",
+          "/media/products/lp/lenovo-13.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "product_id": "lp-lenovo-2",
+        "name": "Lenovo Yoga Slim 7i",
+        "price": 999,
+        "description": "The Lenovo Yoga Slim 7i with a sleek design, powerful performance, and long battery life. Ideal for students and professionals on the go.",
+        "specs": [
+          {
+            "display": "14-inch Full HD display",
+            "processor": "Intel Core i5",
+            "ram": "8GB, 16GB",
+            "storage": "256GB, 512GB, 1TB",
+            "battery": "Up to 14 hours of battery life",
+            "camera": "720p HD camera",
+            "os": "Windows 10"
+          }
+        ],
+        "images": [
+          "/media/products/lp/lenovo-21.jpg",
+          "/media/products/lp/lenovo-22.jpg",
+          "/media/products/lp/lenovo-23.jpg"
+        ]
+      }
+    ]
+  }
+}

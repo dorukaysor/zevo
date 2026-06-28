@@ -1,0 +1,111 @@
+/* ================================================
+   ZEVO — Footer Styles
+   4-column layout + bottom bar
+   ================================================ */
+
+/* --- Footer --- */
+.site-footer {
+    background-color: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 64px 0 0 0;
+    margin-top: 96px;
+}
+
+.footer-grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+}
+
+/* --- Brand Column --- */
+.footer-brand .footer-logo {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.footer-brand .footer-logo span {
+    color: var(--accent);
+}
+
+.footer-brand .tagline {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.footer-brand p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 280px;
+}
+
+/* --- Footer Link Columns --- */
+.footer-column h4 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: var(--muted);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: var(--accent);
+}
+
+/* --- Footer Bottom Bar --- */
+.footer-bottom {
+    border-top: 1px solid var(--border);
+    margin-top: 48px;
+    padding: 24px 32px;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* --- Payment Badges --- */
+.payment-badges {
+    display: flex;
+    gap: 8px;
+}
+
+.payment-badge {
+    background-color: var(--elevated);
+    border: 1px solid var(--border);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}

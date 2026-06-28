@@ -1,0 +1,49 @@
+{
+  "audio": {
+    "count": 6,
+    "boat": [
+      {
+        "id": 1,
+        "product_id": "au-boat-1",
+        "name": "Boat Airdopes 441",
+        "price": 1999,
+        "description": "The Boat Airdopes 441 with a sleek design, powerful sound, and long battery life. Perfect for music lovers on the go.",
+        "specs": [
+          {
+            "type": "True Wireless Earbuds",
+            "battery": "Up to 25 hours of battery life",
+            "water_resistant": "IPX7 water-resistant",
+            "connectivity": "Bluetooth 5.0",
+            "charging_time": "1.5 hours"
+          }
+        ],
+        "images": [
+          "/media/products/au/boat-11.jpg",
+          "/media/products/au/boat-12.jpg",
+          "/media/products/au/boat-13.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "product_id": "au-boat-2",
+        "name": "Boat Rockerz 255 Pro",
+        "price": 1499,
+        "description": "The Boat Rockerz 255 Pro with a stylish design, powerful sound, and long battery life. Ideal for fitness enthusiasts and outdoor activities.",
+        "specs": [
+          {
+            "type": "Wireless Neckband Earphones",
+            "battery": "Up to 20 hours of battery life",
+            "water_resistant": "IPX5 water-resistant",
+            "connectivity": "Bluetooth 5.0",
+            "charging_time": "2 hours"
+          }
+        ],
+        "images": [
+          "/media/products/au/boat-21.jpg",
+          "/media/products/au/boat-22.jpg",
+          "/media/products/au/boat-23.jpg"
+        ]
+      }
+    ]
+  }
+}

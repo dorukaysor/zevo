@@ -1,0 +1,51 @@
+{
+  "smartphones": {
+    "count": "9",
+    "apple": [
+      {
+        "id": 1,
+        "name": "iPhone 14 Pro",
+        "price": 999,
+        "description": "The iPhone 14 Pro with a stunning Super Retina XDR display, powerful A16 Bionic chip, and advanced camera system. Perfect for photography enthusiasts.",
+        "specs": [
+          {
+            "display": "6.1-inch Super Retina XDR display",
+            "processor": "A16 Bionic chip",
+            "ram": "6GB",
+            "storage": "128GB, 256GB, 512GB, 1TB",
+            "battery": "Up to 20 hours of battery life",
+            "camera": "48MP main camera, 12MP ultra-wide camera, 12MP telephoto camera",
+            "os": "iOS 16"
+          }
+        ],
+        "images": [
+          "/media/products/sm/apple-11.jpg",
+          "/media/products/sm/apple-12.jpg",
+          "/media/products/sm/apple-13.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "iPhone 14",
+        "price": 799,
+        "description": "The iPhone 14 with a sleek design, powerful A16 Bionic chip, and advanced camera system. Ideal for everyday use and photography.",
+        "specs": [
+          {
+            "display": "6.1-inch Super Retina XDR display",
+            "processor": "A16 Bionic chip",
+            "ram": "6GB",
+            "storage": "128GB, 256GB, 512GB, 1TB",
+            "battery": "Up to 20 hours of battery life",
+            "camera": "12MP main camera, 12MP ultra-wide camera",
+            "os": "iOS 16"
+          }
+        ],
+        "images": [
+          "/media/products/sm/apple-21.jpg",
+          "/media/products/sm/apple-22.jpg",
+          "/media/products/sm/apple-23.jpg"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+/* ================================================
+   ZEVO — About Page Styles
+   Hero, mission, values, team, CTA
+   ================================================ */
+
+/* --- About Hero --- */
+.about-hero {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero h1 {
+    font-size: 64px;
+}
+
+/* --- Mission Section --- */
+.mission {
+    padding: 96px 0;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.mission-text h2 {
+    margin-bottom: 24px;
+}
+
+.mission-text p {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.mission-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.mission-image img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+/* --- Values Section --- */
+.values {
+    padding: 96px 0;
+    background-color: var(--surface);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.value-card {
+    background-color: var(--elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 40px 32px;
+}
+
+.value-card i {
+    font-size: 32px;
+    color: var(--accent);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.value-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* --- Team Section --- */
+.team {
+    padding: 96px 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.team-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    text-align: center;
+}
+
+.team-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.team-card-body {
+    padding: 24px;
+}
+
+.team-card-body h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.team-card-body .role {
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.team-card-body p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* --- CTA Banner --- */
+.cta-banner {
+    padding: 96px 0;
+    text-align: center;
+    background-color: var(--surface);
+}
+
+.cta-banner h2 {
+    margin-bottom: 16px;
+}
+
+.cta-banner p {
+    color: var(--muted);
+    margin-bottom: 32px;
+    font-size: 16px;
+}

@@ -1,0 +1,286 @@
+/* ================================================
+   ZEVO — Homepage Styles
+   Hero, categories, featured, manifesto, trust, newsletter
+   ================================================ */
+
+/* --- Hero Section --- */
+.hero {
+    height: calc(100vh - 112px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background video */
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Translucent overlay screen */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.65);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+/* Grid lines overlay on top of overlay/video */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* yellow radial glow */
+.hero-glow {
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(250, 204, 21, 0.08) 0%, transparent 70%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 76px;
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 24px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+/* --- Categories Strip --- */
+.categories-strip {
+    padding: 96px 0;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+}
+
+.category-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--text);
+    display: block;
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    border-color: var(--accent);
+    color: var(--text);
+}
+
+.category-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.category-card-body {
+    padding: 20px 16px;
+}
+
+.category-card-body h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.category-card-body p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* --- Featured Products --- */
+.featured {
+    padding: 96px 0;
+    background-color: var(--surface);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* --- Brand Manifesto --- */
+.manifesto {
+    padding: 96px 0;
+}
+
+.manifesto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.manifesto-quote {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.3;
+    color: var(--text);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.stat-box {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px 24px;
+    text-align: center;
+}
+
+.stat-box .stat-number {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 36px;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.stat-box .stat-label {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* --- Trust Badges --- */
+.trust-badges {
+    padding: 64px 0;
+    background-color: var(--surface);
+}
+
+.badges-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    text-align: center;
+}
+
+.trust-badge {
+    padding: 32px 16px;
+}
+
+.trust-badge i {
+    font-size: 32px;
+    color: var(--accent);
+    margin-bottom: 16px;
+    display: block;
+}
+
+.trust-badge h4 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.trust-badge p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* --- Newsletter --- */
+.newsletter {
+    padding: 96px 0;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 16px;
+}
+
+.newsletter p {
+    color: var(--muted);
+    margin-bottom: 32px;
+    font-size: 16px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 14px 20px;
+    background-color: var(--elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
